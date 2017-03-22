@@ -1,0 +1,5 @@
+Download Vuforia SDK here.
+https://www.dropbox.com/s/3fwofopeas0qmyo/vuforia-unity-6-2-10.unitypackage?dl=0
+
+GitHub Repo
+https://github.com/reigngt09/IoTAR
