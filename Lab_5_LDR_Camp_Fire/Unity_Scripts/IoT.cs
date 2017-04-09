@@ -101,7 +101,7 @@ public class IoT : MonoBehaviour, ITrackableEventHandler {
 				timeText.text = System.DateTime.Now.ToString ();
 				microTemperatureText.text = microTemperatureVal.ToString ();
 				LightSensorValue = microTemperatureVal;
-					Debug.Log ("Data of waterlevel sensor: " + (WaterSensorValue/100));
+					Debug.Log ("Data of light intensity sensor: " + (LightSensorValue/100));
 				checkTemperature ();
 				microHumidityText.text = microHumidityVal.ToString ();
 				checkHumidity ();
