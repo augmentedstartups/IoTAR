@@ -62,7 +62,7 @@ public class ReadStream : MonoBehaviour
 					{
 						//	Debug.Log ("Data: " + data [i]); // print all block of data (event + data)
 
-						if (data [i].Contains ("Light Intensity")) {
+						if (data [i].Contains ("LightIntensity")) {
 							temperatureTrue = true;
 							lightTrue = true;
 							motionTrue = true;
