@@ -1,0 +1,1 @@
+This lecture builds upon Lab 9. It is compulsory that you complete this lab before doing Lab 10.
