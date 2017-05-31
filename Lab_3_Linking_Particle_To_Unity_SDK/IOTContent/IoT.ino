@@ -1,16 +1,18 @@
-// This #include statement was automatically added by the Particle IDE.
-#include <Adafruit_DHT.h>
-
+//Created By    : Ritesh Kanjee
+//Project       : Linking Particle Photon to Cloud (IoTAR)
+//Date          : 12 April 2017
+//Description   : Code allows you link published values from Photon to the Cloud
+//Website       : www.ArduinoStartups.com
+//--------------------------------------------------
+// REVISION LIST<br>
+// ==========
+//        
+// 1.00   New Version<br>
+// 1.01   31 May 2017 -   R. Kanjee : Deleted Adafruit DHT Libraries
+//--------------------------------------------------
 // based on; https://www.openhomeautomation.net/cloud-data-logger-particle-photon/
 // ome useful stuff: http://jflasher.github.io/spark-helper/
-// This #include statement was automatically added by the Particle IDE.
-#include "Adafruit_DHT/Adafruit_DHT.h"
 
-// This #include statement was automatically added by the Particle IDE.
-
-// DHT parameters
-#define DHTPIN 5
-#define DHTTYPE DHT11
 
 // Variables
 int temperature;
@@ -27,9 +29,6 @@ int pir = 2;
 int pirState = LOW;
 int uv = A1;
 
-// DHT sensor
-DHT dht(DHTPIN, DHTTYPE);
-
 void setup() {
     Particle.function("led", ledControl);
     Particle.function("led2", ledControl2);
@@ -39,16 +38,15 @@ void setup() {
     pinMode(led2,OUTPUT);
     digitalWrite(led,LOW);
     digitalWrite(led2,LOW);
-    dht.begin();
 }
 
 void loop() {
     
     // Humidity measurement
-    temperature = dht.getTempCelcius();
+    temperature = 23;
     
     // Humidity measurement
-    humidity = dht.getHumidity();
+    humidity = 50;
     
     // Light level measurement
     float light_measurement = analogRead(light_sensor_pin);
