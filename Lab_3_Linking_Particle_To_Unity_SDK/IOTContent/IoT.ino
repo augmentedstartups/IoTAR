@@ -12,8 +12,7 @@
 //--------------------------------------------------
 // based on; https://www.openhomeautomation.net/cloud-data-logger-particle-photon/
 // ome useful stuff: http://jflasher.github.io/spark-helper/
-
-
+//--------------------------------------------------
 // Variables
 int temperature;
 int humidity;
